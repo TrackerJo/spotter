@@ -7,10 +7,10 @@
   margin-inline: auto;
   padding: clamp(24px, 4.5vh, 48px) clamp(24px, 5.5vw, 88px) 24px;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto minmax(0, 1fr);
   color: var(--ink);
 }
-.header, .footer {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,6 @@
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand span { font-size: 29px; font-weight: 750; letter-spacing: -1.5px; }
 .brand-mark { display: block; width: 37px; height: 37px; object-fit: contain; filter: brightness(0); }
-.availability { color: var(--muted); font-size: 12px; letter-spacing: .01em; }
 .hero {
   display: grid;
   grid-template-columns: 1fr 1.08fr;
@@ -29,6 +28,21 @@
   padding-bottom: 18px;
 }
 .hero-copy { position: relative; z-index: 1; }
+.support { display: grid; align-items: center; padding-block: 24px; }
+.support h1 { font-size: clamp(48px, 7vw, 88px); }
+.support-email {
+  display: inline-block;
+  margin-top: 24px;
+  padding-block: 10px;
+  color: var(--accent);
+  font-size: clamp(17px, 3vw, 24px);
+  font-weight: 550;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  overflow-wrap: anywhere;
+}
+.support-email:hover { text-decoration-thickness: 2px; }
+.support-email:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 4px; }
 h1 {
   font-size: clamp(60px, 7.4vw, 112px);
   line-height: 1.04;
@@ -47,26 +61,23 @@ h1 span { display: block; color: var(--accent); }
 }
 .download {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  min-height: 58px;
+  vertical-align: top;
   margin-top: 34px;
-  padding: 16px 26px;
+  padding: 0;
   border: 0;
-  border-radius: 999px;
-  background: var(--button);
-  color: var(--button-text);
+  border-radius: 12px;
+  background: transparent;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+  line-height: 0;
+  transition: transform 160ms cubic-bezier(.23, 1, .32, 1);
 }
-a.download:hover { transform: translateY(-3px); box-shadow: 0 8px 24px #6262d626; }
-a.download:active { transform: translateY(0); }
+.download-badge { display: block; width: 168px; height: 56px; }
+@media (hover: hover) and (pointer: fine) {
+  a.download:hover { transform: translateY(-2px); }
+}
+a.download:active { transform: scale(.97); }
 .download:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
-.download:disabled { cursor: not-allowed; }
+.download:disabled { cursor: default; }
 .hero-visual {
   position: relative;
   display: grid;
@@ -90,9 +101,6 @@ a.download:active { transform: translateY(0); }
   height: auto;
   object-fit: contain;
 }
-.footer { border-top: 1px solid var(--line); padding-top: 20px; }
-.footer p { font-size: 12px; font-weight: 550; letter-spacing: -.01em; }
-.footer span { font-size: 11px; color: var(--muted); }
 
 @media (prefers-color-scheme: dark) {
   .brand-mark { filter: none; }
@@ -114,7 +122,6 @@ a.download:active { transform: translateY(0); }
   .landing { padding: max(20px, env(safe-area-inset-top)) 24px max(18px, env(safe-area-inset-bottom)); }
   .brand span { font-size: 25px; }
   .brand-mark { width: 31px; height: 31px; }
-  .availability { font-size: 10px; }
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(0, 1fr) auto;
@@ -128,26 +135,23 @@ a.download:active { transform: translateY(0); }
   .dumbbells { width: min(93vw, 38dvh); max-height: 100%; object-fit: contain; }
   h1 { font-size: clamp(44px, 8.2dvh, 72px); line-height: 1.03; }
   .description { max-width: 300px; margin: 18px auto 0; font-size: 14px; line-height: 1.65; }
-  .download { min-height: 54px; margin-top: 24px; padding: 15px 25px; font-size: 14px; }
-  .footer { padding-top: 16px; gap: 10px; }
-  .footer p { font-size: 10px; }
-  .footer span { font-size: 9px; }
+  .download { margin-top: 24px; }
 }
 @media (max-height: 700px) and (min-width: 768px), (max-height: 500px) and (orientation: landscape) {
   .landing { padding-top: 20px; padding-bottom: 16px; }
   h1 { font-size: clamp(42px, 12dvh, 80px); }
   .description { margin-top: 18px; font-size: 14px; line-height: 1.6; }
-  .download { margin-top: 20px; min-height: 48px; padding: 12px 22px; font-size: 14px; }
+  .download { margin-top: 20px; }
+  .download-badge { width: 144px; height: 48px; }
   .hero { padding-block: 12px; }
   .dumbbells { width: min(105%, 72dvh); }
   .visual-disc { width: min(90%, 59dvh); }
-  .footer { padding-top: 12px; }
 }
 @media (max-height: 650px) and (orientation: portrait) {
   .landing { padding-top: 16px; padding-bottom: 14px; }
   .hero { padding-bottom: 16px; }
   h1 { font-size: clamp(38px, 8dvh, 48px); }
   .description { margin-top: 12px; font-size: 12px; }
-  .download { margin-top: 16px; min-height: 48px; padding: 12px 22px; }
-  .footer { padding-top: 12px; }
+  .download { margin-top: 16px; }
+  .download-badge { width: 144px; height: 48px; }
 }
