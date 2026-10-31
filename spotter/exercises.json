@@ -1,0 +1,905 @@
+[
+  {
+    "id": "bench-barbell",
+    "name": "Barbell bench press",
+    "primary": "Chest",
+    "secondary": [
+      "Triceps",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Horizontal push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Bench",
+      "Flat bench"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "incline-dumbbell",
+    "name": "Incline dumbbell press",
+    "primary": "Chest",
+    "secondary": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Incline push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Incline bench",
+      "Incline DB press"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "bench-dumbbell",
+    "name": "Dumbbell bench press",
+    "primary": "Chest",
+    "secondary": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Horizontal push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "DB bench"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "chest-machine",
+    "name": "Machine chest press",
+    "primary": "Chest",
+    "secondary": [
+      "Triceps"
+    ],
+    "equipment": "Machine",
+    "pattern": "Horizontal push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Chest press"
+    ],
+    "increment": null
+  },
+  {
+    "id": "cable-fly",
+    "name": "Cable fly",
+    "primary": "Chest",
+    "secondary": [],
+    "equipment": "Cable",
+    "pattern": "Horizontal adduction",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Crossover",
+      "Cable chest fly"
+    ],
+    "increment": null
+  },
+  {
+    "id": "pushup",
+    "name": "Push-up",
+    "primary": "Chest",
+    "secondary": [
+      "Triceps",
+      "Core"
+    ],
+    "equipment": "Bodyweight",
+    "pattern": "Horizontal push",
+    "tracking": "Bodyweight",
+    "aliases": [
+      "Press-up"
+    ],
+    "increment": null
+  },
+  {
+    "id": "shoulder-dumbbell",
+    "name": "Dumbbell shoulder press",
+    "primary": "Shoulders",
+    "secondary": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Vertical push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "DB overhead press"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "overhead-barbell",
+    "name": "Barbell overhead press",
+    "primary": "Shoulders",
+    "secondary": [
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Vertical push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "OHP",
+      "Military press"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "lateral-raise",
+    "name": "Dumbbell lateral raise",
+    "primary": "Shoulders",
+    "secondary": [],
+    "equipment": "Dumbbell",
+    "pattern": "Abduction",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Side raise",
+      "DB lateral raise"
+    ],
+    "increment": 1
+  },
+  {
+    "id": "rear-delt",
+    "name": "Reverse pec deck",
+    "primary": "Shoulders",
+    "secondary": [
+      "Upper back"
+    ],
+    "equipment": "Machine",
+    "pattern": "Horizontal abduction",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Rear delt fly"
+    ],
+    "increment": null
+  },
+  {
+    "id": "triceps-pushdown",
+    "name": "Cable triceps pushdown",
+    "primary": "Triceps",
+    "secondary": [],
+    "equipment": "Cable",
+    "pattern": "Elbow extension",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Rope pushdown",
+      "Cable pressdown",
+      "Triceps pressdown",
+      "Cable triceps pressdown"
+    ],
+    "increment": null
+  },
+  {
+    "id": "triceps-overhead",
+    "name": "Overhead triceps extension",
+    "primary": "Triceps",
+    "secondary": [],
+    "equipment": "Cable",
+    "pattern": "Elbow extension",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Overhead extension",
+      "Overhead cable triceps extension"
+    ],
+    "increment": null
+  },
+  {
+    "id": "dip",
+    "name": "Dip",
+    "primary": "Triceps",
+    "secondary": [
+      "Chest"
+    ],
+    "equipment": "Bodyweight",
+    "pattern": "Vertical push",
+    "tracking": "Bodyweight",
+    "aliases": [
+      "Dips"
+    ],
+    "increment": null
+  },
+  {
+    "id": "lat-pulldown",
+    "name": "Lat pulldown",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Cable",
+    "pattern": "Vertical pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Pulldown"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "pullup",
+    "name": "Pull-up",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Bodyweight",
+    "pattern": "Vertical pull",
+    "tracking": "Bodyweight",
+    "aliases": [
+      "Pull up"
+    ],
+    "increment": null
+  },
+  {
+    "id": "assisted-pullup",
+    "name": "Assisted pull-up",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Machine",
+    "pattern": "Vertical pull",
+    "tracking": "Assisted",
+    "aliases": [
+      "Assisted chin-up"
+    ],
+    "increment": null
+  },
+  {
+    "id": "cable-row",
+    "name": "Seated cable row",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Cable",
+    "pattern": "Horizontal pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Row"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "barbell-row",
+    "name": "Barbell bent-over row",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Horizontal pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Bent row"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "dumbbell-row",
+    "name": "One-arm dumbbell row",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Horizontal pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "DB row"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "face-pull",
+    "name": "Face pull",
+    "primary": "Shoulders",
+    "secondary": [
+      "Upper back"
+    ],
+    "equipment": "Cable",
+    "pattern": "Horizontal pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Rope face pull"
+    ],
+    "increment": null
+  },
+  {
+    "id": "dumbbell-curl",
+    "name": "Dumbbell curl",
+    "primary": "Biceps",
+    "secondary": [],
+    "equipment": "Dumbbell",
+    "pattern": "Elbow flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Biceps curl"
+    ],
+    "increment": 1
+  },
+  {
+    "id": "hammer-curl",
+    "name": "Hammer curl",
+    "primary": "Biceps",
+    "secondary": [
+      "Forearms"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Elbow flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Neutral curl"
+    ],
+    "increment": 1
+  },
+  {
+    "id": "squat-barbell",
+    "name": "Barbell back squat",
+    "primary": "Quads",
+    "secondary": [
+      "Glutes",
+      "Core"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Squat",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Squat"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "front-squat",
+    "name": "Front squat",
+    "primary": "Quads",
+    "secondary": [
+      "Glutes",
+      "Core"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Squat",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Front rack squat"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "goblet-squat",
+    "name": "Goblet squat",
+    "primary": "Quads",
+    "secondary": [
+      "Glutes"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Squat",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Goblet"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "romanian-deadlift",
+    "name": "Romanian deadlift",
+    "primary": "Hamstrings",
+    "secondary": [
+      "Glutes",
+      "Back"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Hip hinge",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "RDL"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "deadlift",
+    "name": "Conventional deadlift",
+    "primary": "Back",
+    "secondary": [
+      "Hamstrings",
+      "Glutes"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Hip hinge",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Deadlift"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "leg-press",
+    "name": "Leg press",
+    "primary": "Quads",
+    "secondary": [
+      "Glutes"
+    ],
+    "equipment": "Machine",
+    "pattern": "Squat",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Sled press"
+    ],
+    "increment": null
+  },
+  {
+    "id": "leg-extension",
+    "name": "Leg extension",
+    "primary": "Quads",
+    "secondary": [],
+    "equipment": "Machine",
+    "pattern": "Knee extension",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Quad extension"
+    ],
+    "increment": null
+  },
+  {
+    "id": "leg-curl",
+    "name": "Seated leg curl",
+    "primary": "Hamstrings",
+    "secondary": [],
+    "equipment": "Machine",
+    "pattern": "Knee flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Hamstring curl"
+    ],
+    "increment": null
+  },
+  {
+    "id": "lying-leg-curl",
+    "name": "Lying leg curl",
+    "primary": "Hamstrings",
+    "secondary": [],
+    "equipment": "Machine",
+    "pattern": "Knee flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Prone curl"
+    ],
+    "increment": null
+  },
+  {
+    "id": "calf-raise",
+    "name": "Standing calf raise",
+    "primary": "Calves",
+    "secondary": [],
+    "equipment": "Machine",
+    "pattern": "Plantar flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Calf press"
+    ],
+    "increment": null
+  },
+  {
+    "id": "hip-thrust",
+    "name": "Barbell hip thrust",
+    "primary": "Glutes",
+    "secondary": [
+      "Hamstrings"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Hip extension",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Glute bridge",
+      "Hip thrust"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "split-squat",
+    "name": "Bulgarian split squat",
+    "primary": "Quads",
+    "secondary": [
+      "Glutes"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Lunge",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Rear foot elevated split squat"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "walking-lunge",
+    "name": "Walking lunge",
+    "primary": "Quads",
+    "secondary": [
+      "Glutes"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Lunge",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Lunges"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "primary": "Core",
+    "secondary": [],
+    "equipment": "Bodyweight",
+    "pattern": "Anti-extension",
+    "tracking": "Time",
+    "aliases": [
+      "Front plank"
+    ],
+    "increment": null
+  },
+  {
+    "id": "side-plank",
+    "name": "Side plank",
+    "primary": "Core",
+    "secondary": [],
+    "equipment": "Bodyweight",
+    "pattern": "Anti-lateral flexion",
+    "tracking": "Time",
+    "aliases": [
+      "Side bridge"
+    ],
+    "increment": null
+  },
+  {
+    "id": "crunch",
+    "name": "Cable crunch",
+    "primary": "Core",
+    "secondary": [],
+    "equipment": "Cable",
+    "pattern": "Trunk flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Ab crunch"
+    ],
+    "increment": null
+  },
+  {
+    "id": "hanging-knee",
+    "name": "Hanging knee raise",
+    "primary": "Core",
+    "secondary": [],
+    "equipment": "Bodyweight",
+    "pattern": "Trunk flexion",
+    "tracking": "Bodyweight",
+    "aliases": [
+      "Knee raise"
+    ],
+    "increment": null
+  },
+  {
+    "id": "run",
+    "name": "Treadmill run",
+    "primary": "Cardio",
+    "secondary": [
+      "Quads",
+      "Calves"
+    ],
+    "equipment": "Treadmill",
+    "pattern": "Locomotion",
+    "tracking": "Distance & time",
+    "aliases": [
+      "Running"
+    ],
+    "increment": null
+  },
+  {
+    "id": "row-erg",
+    "name": "Rowing ergometer",
+    "primary": "Cardio",
+    "secondary": [
+      "Back",
+      "Quads"
+    ],
+    "equipment": "Rower",
+    "pattern": "Locomotion",
+    "tracking": "Distance & time",
+    "aliases": [
+      "Rowing machine"
+    ],
+    "increment": null
+  },
+  {
+    "id": "bike",
+    "name": "Stationary bike",
+    "primary": "Cardio",
+    "secondary": [
+      "Quads"
+    ],
+    "equipment": "Bike",
+    "pattern": "Locomotion",
+    "tracking": "Distance & time",
+    "aliases": [
+      "Cycling"
+    ],
+    "increment": null
+  },
+  {
+    "id": "incline-barbell",
+    "name": "Incline barbell press",
+    "primary": "Chest",
+    "secondary": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Incline push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Incline barbell bench press"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "incline-smith",
+    "name": "Incline Smith press",
+    "primary": "Chest",
+    "secondary": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Smith machine",
+    "pattern": "Incline push",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Smith incline bench press",
+      "Incline Smith machine press"
+    ],
+    "increment": null
+  },
+  {
+    "id": "machine-fly",
+    "name": "Machine chest fly",
+    "primary": "Chest",
+    "secondary": [],
+    "equipment": "Machine",
+    "pattern": "Horizontal adduction",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Machine fly",
+      "Pec deck",
+      "Pec deck fly"
+    ],
+    "increment": null
+  },
+  {
+    "id": "lateral-cable",
+    "name": "Cable lateral raise",
+    "primary": "Shoulders",
+    "secondary": [],
+    "equipment": "Cable",
+    "pattern": "Abduction",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Cable side raise",
+      "Single-arm cable lateral raise"
+    ],
+    "increment": null
+  },
+  {
+    "id": "lateral-machine",
+    "name": "Machine lateral raise",
+    "primary": "Shoulders",
+    "secondary": [],
+    "equipment": "Machine",
+    "pattern": "Abduction",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Machine side raise"
+    ],
+    "increment": null
+  },
+  {
+    "id": "weighted-pullup",
+    "name": "Weighted pull-up",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Bodyweight",
+    "pattern": "Vertical pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Weighted pull up",
+      "Weighted pullup"
+    ],
+    "increment": null
+  },
+  {
+    "id": "chest-supported-row",
+    "name": "Chest-supported row",
+    "primary": "Back",
+    "secondary": [
+      "Biceps",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "pattern": "Horizontal pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Chest supported row",
+      "Chest-supported machine row",
+      "Machine chest-supported row"
+    ],
+    "increment": null
+  },
+  {
+    "id": "chest-supported-dumbbell-row",
+    "name": "Chest-supported dumbbell row",
+    "primary": "Back",
+    "secondary": [
+      "Biceps",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "pattern": "Horizontal pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Chest-supported DB row",
+      "Incline dumbbell row"
+    ],
+    "increment": 2
+  },
+  {
+    "id": "neutral-lat-pulldown",
+    "name": "Neutral-grip lat pulldown",
+    "primary": "Back",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Cable",
+    "pattern": "Vertical pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Neutral grip lat pulldown",
+      "Neutral-grip pulldown",
+      "Parallel-grip lat pulldown"
+    ],
+    "increment": null
+  },
+  {
+    "id": "high-row-machine",
+    "name": "High row machine",
+    "primary": "Back",
+    "secondary": [
+      "Biceps",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "pattern": "Diagonal pull",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Machine high row",
+      "Iso-lateral high row"
+    ],
+    "increment": null
+  },
+  {
+    "id": "cable-pullover",
+    "name": "Cable pullover",
+    "primary": "Back",
+    "secondary": [],
+    "equipment": "Cable",
+    "pattern": "Shoulder extension",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Straight-arm pulldown",
+      "Cable lat pullover",
+      "Straight arm pulldown"
+    ],
+    "increment": null
+  },
+  {
+    "id": "incline-dumbbell-curl",
+    "name": "Incline dumbbell curl",
+    "primary": "Biceps",
+    "secondary": [],
+    "equipment": "Dumbbell",
+    "pattern": "Elbow flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Incline DB curl",
+      "Incline curl"
+    ],
+    "increment": 1
+  },
+  {
+    "id": "preacher-curl",
+    "name": "Preacher curl",
+    "primary": "Biceps",
+    "secondary": [],
+    "equipment": "Barbell",
+    "pattern": "Elbow flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "EZ-bar preacher curl",
+      "Barbell preacher curl"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "reverse-curl",
+    "name": "Reverse curl",
+    "primary": "Forearms",
+    "secondary": [
+      "Biceps"
+    ],
+    "equipment": "Barbell",
+    "pattern": "Elbow flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Barbell reverse curl",
+      "EZ-bar reverse curl",
+      "Reverse-grip curl"
+    ],
+    "increment": 2.5
+  },
+  {
+    "id": "cable-curl",
+    "name": "Cable curl",
+    "primary": "Biceps",
+    "secondary": [],
+    "equipment": "Cable",
+    "pattern": "Elbow flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Cable biceps curl",
+      "Standing cable curl"
+    ],
+    "increment": null
+  },
+  {
+    "id": "hack-squat",
+    "name": "Hack squat",
+    "primary": "Quads",
+    "secondary": [
+      "Glutes"
+    ],
+    "equipment": "Machine",
+    "pattern": "Squat",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Machine hack squat",
+      "Hack squat machine"
+    ],
+    "increment": null
+  },
+  {
+    "id": "seated-calf-raise",
+    "name": "Seated calf raise",
+    "primary": "Calves",
+    "secondary": [],
+    "equipment": "Machine",
+    "pattern": "Plantar flexion",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Seated calf press"
+    ],
+    "increment": null
+  },
+  {
+    "id": "glute-drive",
+    "name": "Glute drive",
+    "primary": "Glutes",
+    "secondary": [
+      "Hamstrings"
+    ],
+    "equipment": "Machine",
+    "pattern": "Hip extension",
+    "tracking": "Weight & reps",
+    "aliases": [
+      "Machine hip thrust",
+      "Glute drive machine",
+      "Hip thrust machine"
+    ],
+    "increment": null
+  }
+]

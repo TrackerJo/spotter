@@ -1,0 +1,2 @@
+Generated using the built-in image generation tool with transparent_background enabled.
+Prompt: Create a transparent PNG logo symbol for Spotter, an iPhone workout logging app for two friends. A bold geometric S monogram with interlocking curved forms evoking supportive partners and dumbbell ends. Opaque white, rounded contours, generous negative space, centered square composition with transparent padding. No text, tile, border, shadows, glow, gradients, or mockup. Intended as an Apple Icon Composer foreground layer.
